@@ -19,14 +19,21 @@
     return self.dataArray[indexPath.row];
 }
 
+//imageURL
 - (NSURL *)iconURLForIndexPath:(NSIndexPath *)indexPath{
     return [NSURL URLWithString:[self modelForIndexPath:indexPath].image];
 }
 
+//Title
 - (NSString *)titleForIndexPath:(NSIndexPath *)indexPath {
     return [self modelForIndexPath:indexPath].post.title;
 }
 
+- (NSString *)timeForIndexPath:(NSIndexPath *)indexPath {
+    return [self modelForIndexPath:indexPath].type;
+}
+
+//点赞数量
 - (NSString *)praiseNumForIndexPath:(NSIndexPath *)indexPath{
     return [self modelForIndexPath:indexPath].post.praise_count;
 }

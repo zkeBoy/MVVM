@@ -16,7 +16,8 @@
 
 - (NSURL *)iconURLForIndexPath:(NSIndexPath *)indexPath;
 - (NSString *)titleForIndexPath:(NSIndexPath *)indexPath;
-- (NSString *)praiseNumForIndexPath:(NSIndexPath *)indexPath; 
+- (NSString *)praiseNumForIndexPath:(NSIndexPath *)indexPath;
+- (NSString *)timeForIndexPath:(NSIndexPath *)indexPath;
 
 - (NSString *)didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
 @end

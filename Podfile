@@ -11,5 +11,5 @@ target 'MVVM' do
   pod 'SDWebImage'
   pod 'SDWebImage/GIF'
   pod 'MJExtension'
-
+  pod 'Masonry'
 end

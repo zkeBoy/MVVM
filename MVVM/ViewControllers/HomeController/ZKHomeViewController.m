@@ -34,6 +34,7 @@ static NSString * const homeCellIdentifider = @"ZKHomeTableViewCell";
     ZKHomeTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:homeCellIdentifider forIndexPath:indexPath];
     [cell.imgView sd_setImageWithURL:[self.homeVM iconURLForIndexPath:indexPath]];
     cell.titleLabel.text = [self.homeVM titleForIndexPath:indexPath];
+    cell.timeLabel.text = [self.homeVM timeForIndexPath:indexPath];
     return cell;
 }
 
@@ -43,7 +44,7 @@ static NSString * const homeCellIdentifider = @"ZKHomeTableViewCell";
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 0;
+    return 80;
 }
 
 

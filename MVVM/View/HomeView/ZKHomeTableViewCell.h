@@ -11,5 +11,5 @@
 @interface ZKHomeTableViewCell : UITableViewCell
 @property (nonatomic, strong) UIImageView * imgView;
 @property (nonatomic, strong) UILabel     * titleLabel;
-
+@property (nonatomic, strong) UILabel     * timeLabel;
 @end
